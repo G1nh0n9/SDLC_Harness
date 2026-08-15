@@ -1,0 +1,30 @@
+Source: NASA-STD-8739.8B Software Assurance and Software Safety Standard
+Official record: https://standards.nasa.gov/standard/NASA/NASA-STD-87398
+Official PDF: https://standards.nasa.gov/system/files/tmp/NASA-STD-87398%20REV%20B.pdf
+Retrieved: 2026-08-15
+PDF SHA-256: e360f16cd3730ce32975f5207945840c1073dab7b54d3b71a443978afbe03539
+
+Page 5, section 1.1:
+The purpose of the Software Assurance and Software Safety Standard is to define the requirements to implement a systematic approach to Software Assurance (SA), software safety, and Independent Verification and Validation (IV&V) for software created, acquired, provided, or maintained by or for NASA.
+
+The Software Assurance and Software Safety Standard provides a basis for personnel to perform software assurance, software safety, and IV&V activities consistently throughout the life of the software, that is, from its conception, through creation to operations and maintenance, and until the software is retired.
+
+Page 6, section 1.3:
+The software assurance and software safety information and plans are quality records.
+
+The software assurance and software safety organizations keep records, reports, metrics, analyses, and trending results and keep copies of their project plans for future reference and improvements.
+
+The software assurance and software safety organization and the project manager are responsible for developing the software assurance and software safety plan(s).
+
+Page 10, definition of Confirm:
+Confirm. Checks to see that activities specified in the software engineering requirements are adequately done and evidence of the activities exists as proof.
+
+Page 10, definition of Audit:
+Audit. systematic, independent, and documented process for obtaining audit evidence and evaluating it objectively to determine the extent to which audit criteria are fulfilled.
+
+Page 48, sections 4.4.1.1 and 4.4.1.2:
+IV&V is a technical discipline of software assurance that employs rigorous analysis and testing methodologies to identify objective evidence and conclusions to provide an independent assessment of critical products and processes throughout the life-cycle.
+
+Three parameters define the independence of IV&V: technical independence, managerial independence, and financial independence.
+
+Technical independence requires that the personnel performing the IV&V analysis are not involved in the development of the system or its elements.

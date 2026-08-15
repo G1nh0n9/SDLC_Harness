@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 2,
+      "url": "https://www.microsoft.com/en-us/securityengineering/sdl/practices",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 3,
+      "url": "https://csrc.nist.gov/Projects/ssdf",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 4,
+      "url": "https://doi.org/10.6028/NIST.SP.800-218",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 5,
+      "url": "https://www.gov.uk/service-manual/the-team/set-up-a-service-team",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 6,
+      "url": "https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 7,
+      "url": "https://www.atlassian.com/agile/product-management/product-development",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 8,
+      "url": "https://handbook.gitlab.com/handbook/product",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 9,
+      "url": "https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 10,
+      "url": "https://sre.google/sre-book/evolving-sre-engagement-model",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 11,
+      "url": "https://sre.google/workbook/on-call",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 12,
+      "url": "https://handbook.gitlab.com/handbook/engineering/devops/create/decision-making-process",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 13,
+      "url": "https://handbook.gitlab.com/handbook/engineering/testing",
+      "title": "",
+      "accessed": "2026-08-14"
+    }
+  ]
+}

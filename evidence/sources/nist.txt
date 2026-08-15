@@ -1,0 +1,109 @@
+An official website of the United States government
+
+Here’s how you know
+ CSRC MENU
+Search
+Search
+PUBLICATIONS
+NIST SP 800-218
+Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities
+Share to Facebook
+ 
+Share to X
+ 
+Share to LinkedIn
+ 
+Share ia Email
+
+    Documentation     Topics
+
+Date Published: February 2022
+
+
+Supersedes: CSWP 13 (04/23/2020)
+
+
+Author(s)
+
+Murugiah Souppaya (NIST), Karen Scarfone (Scarfone Cybersecurity), Donna Dodson
+
+Abstract
+Few software development life cycle (SDLC) models explicitly address software security in detail, so secure software development practices usually need to be added to each SDLC model to ensure that the software being developed is well-secured. This document recommends the Secure Software Development... See full abstract
+Keywords
+secure software development; Secure Software Development Framework (SSDF); secure software development practices; software acquisition; software development; software development life cycle (SDLC); software security
+Control Families
+
+None selected
+
+DOCUMENTATION
+
+Publication:
+ https://doi.org/10.6028/NIST.SP.800-218
+ Download URL
+ Potential updates (xlsx)
+ Translations
+
+
+Supplemental Material:
+ SP 800-218 Table in Excel (xlsx)
+ Delta from April 2020 paper (docx)
+ Delta from September 2021 public draft (docx)
+ SSDF Project homepage
+ Executive Order 14028, Improving the Nation's Cybersecurity
+
+
+Publication Parts:
+SP 800-218A
+
+
+Related NIST Publications:
+Other
+
+
+Document History:
+09/30/21: SP 800-218 (Draft)
+02/03/22: SP 800-218 (Final)
+
+
+TOPICS
+Security and Privacy
+
+cybersecurity supply chain risk management, vulnerability management
+
+Technologies
+
+software & firmware
+
+Laws and Regulations
+
+Executive Order 14028
+
+HEADQUARTERS
+100 Bureau Drive
+Gaithersburg, MD 20899
+X
+(link is external)
+ 
+facebook
+(link is external)
+ 
+linkedin
+(link is external)
+ 
+instagram
+(link is external)
+ 
+youtube
+(link is external)
+ 
+rss
+ 
+govdelivery
+(link is external)
+
+Want updates about CSRC and our publications? Subscribe
+
+Contact Us | Our Other Offices
+
+Send inquiries to csrc-inquiry@nist.gov
+Site Privacy Accessibility Privacy Program Copyrights Vulnerability Disclosure No Fear Act Policy FOIA Environmental Policy Scientific Integrity Information Quality Standards Commerce.gov Science.gov USA.gov Vote.gov

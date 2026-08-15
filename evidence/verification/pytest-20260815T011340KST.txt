@@ -1,0 +1,222 @@
+F..........FF......F...................F...............                  [100%]
+================================== FAILURES ===================================
+__________ test_runner_returns_data_result_without_advancing_mission __________
+
+tmp_path = WindowsPath('C:/devkitPro/msys2/tmp/pytest-of-gimhc/pytest-78/test_runner_returns_data_resul0')
+
+    def test_runner_returns_data_result_without_advancing_mission(tmp_path) -> None:  # type: ignore[no-untyped-def]
+        manager = MissionManager()
+        mission = manager.create_mission(complete_goal())
+        task = manager.issue_task(StageKind.SCOPE_RISK, "risk-analyst")
+        catalog = RoleCatalog.default_with_dynamic_role(
+            "risk-analyst", can_execute_commands=False, can_approve=False
+        )
+        workspace = WorkspaceBroker(tmp_path / "runs", catalog).create(
+            mission_id=mission.mission_id,
+            revision=mission.revision,
+            task_id=task.task_id,
+            role=task.assignee_role,
+        )
+        runner = RecordingAgentRunner(
+            response=passing_payload(risk_level=1, decision="continue")
+        )
+    
+        result = runner.dispatch(
+            AgentRunRequest(task=task, prompt="Assess scope and risk", workspace=workspace)
+        )
+        disposition = manager.receive_result(result)
+    
+>       assert disposition is ResultDisposition.ACCEPTED_AS_INPUT
+E       AssertionError: assert <ResultDisposition.REJECTED_INVALID_PAYLOAD: 'rejected-invalid-payload'> is <ResultDisposition.ACCEPTED_AS_INPUT: 'accepted-as-input'>
+E        +  where <ResultDisposition.ACCEPTED_AS_INPUT: 'accepted-as-input'> = ResultDisposition.ACCEPTED_AS_INPUT
+
+tests\test_agent_runner.py:67: AssertionError
+_________ test_demo_command_runs_end_to_end_and_builds_bound_release __________
+
+tmp_path = WindowsPath('C:/devkitPro/msys2/tmp/pytest-of-gimhc/pytest-78/test_demo_command_runs_end_to_0')
+capsys = <_pytest.capture.CaptureFixture object at 0x000001FC8BE6F410>
+
+    def test_demo_command_runs_end_to_end_and_builds_bound_release(tmp_path: Path, capsys) -> None:  # type: ignore[no-untyped-def]
+>       exit_code = main(["demo", "--root", str(tmp_path), "--json"])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_cli.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\agent_harness\cli.py:339: in main
+    report = run_demo(args.root)
+             ^^^^^^^^^^^^^^^^^^^
+src\agent_harness\cli.py:133: in run_demo
+    manager.advance_if_ready()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <agent_harness.mission.MissionManager object at 0x000001FC8BE6C910>
+
+    def advance_if_ready(self) -> StageKind | None:
+        mission = self.current_mission
+        if mission.completed:
+            raise StageGateDenied("mission is already completed")
+        stage = mission.current_stage
+        required_roles = mission.plan.stage(stage).roles - {"mission-manager"}
+        passing_results: dict[str, AgentResult] = {}
+        for role in sorted(required_roles):
+            role_results = [
+                result
+                for result in mission.accepted_results
+                if result.revision == mission.revision
+                and result.stage is stage
+                and result.sender_role == role
+            ]
+            if not role_results:
+>               raise StageGateDenied(f"missing passing result for role {role}")
+E               agent_harness.mission.StageGateDenied: missing passing result for role risk-analyst
+
+src\agent_harness\mission.py:411: StageGateDenied
+___________________ test_python_module_entrypoint_runs_demo ___________________
+
+tmp_path = WindowsPath('C:/devkitPro/msys2/tmp/pytest-of-gimhc/pytest-78/test_python_module_entrypoint_0')
+
+    def test_python_module_entrypoint_runs_demo(tmp_path: Path) -> None:
+        completed = subprocess.run(
+            [
+                sys.executable,
+                "-m",
+                "agent_harness.cli",
+                "demo",
+                "--root",
+                str(tmp_path / "module-run"),
+                "--json",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            check=False,
+        )
+    
+>       assert completed.returncode == 0
+E       assert 1 == 0
+E        +  where 1 = CompletedProcess(args=['C:\\Users\\gimhc\\agent-workflow-harness\\.venv\\Scripts\\python.exe', '-m', 'agent_harness.cl...ssing result for role {role}")\nagent_harness.mission.StageGateDenied: missing passing result for role risk-analyst\n').returncode
+
+tests\test_cli.py:52: AssertionError
+______________ test_plugin_service_persists_and_advances_mission ______________
+
+tmp_path = WindowsPath('C:/devkitPro/msys2/tmp/pytest-of-gimhc/pytest-78/test_plugin_service_persists_a0')
+
+    def test_plugin_service_persists_and_advances_mission(tmp_path: Path) -> None:
+        root = tmp_path / "plugin-data"
+        first = WorkflowPluginService(root)
+        started = first.start(
+            {
+                "goal": "인증 기능을 추가한다",
+                "decision_action": "배포 여부를 결정한다",
+                "outcome": "승인된 사용자의 로그인",
+                "population": "로그인 사용자",
+                "analysis_unit": "로그인 시도",
+                "time_horizon": "배포 시점",
+                "question_type": "implementation",
+                "data_description": "현재 저장소와 인수 기준",
+                "decision_threshold": "모든 수락 시험 통과",
+                "constraints": ["비밀번호를 로그에 남기지 않는다"],
+                "risk_level": 2,
+            }
+        )
+    
+        assert started["mission_id"].startswith("mis-")
+        assert started["current_stage"] == "scope-risk"
+        assert {task["role"] for task in started["tasks"]} == {"risk-analyst"}
+    
+        # A new service instance simulates a Hermes process restart.
+        second = WorkflowPluginService(root)
+        status = second.status(started["mission_id"])
+        assert status["revision"] == 1
+        task = status["tasks"][0]
+    
+        rejected = second.submit_result(
+            {
+                "mission_id": started["mission_id"],
+                "revision": 1,
+                "task_id": task["task_id"],
+                "role": task["role"],
+                "payload": {
+                    **_passing_payload(),
+                    "artifacts": [
+                        {
+                            "path": "missing.json",
+                            "sha256": "0" * 64,
+                            "media_type": "application/json",
+                        }
+                    ],
+                },
+            }
+        )
+        assert rejected["disposition"] == "rejected-invalid-payload"
+        assert rejected["current_stage"] == "scope-risk"
+    
+        submitted = second.submit_result(
+            {
+                "mission_id": started["mission_id"],
+                "revision": 1,
+                "task_id": task["task_id"],
+                "role": task["role"],
+                "payload": _passing_payload(),
+            }
+        )
+    
+>       assert submitted["disposition"] == "accepted-as-input"
+E       AssertionError: assert 'rejected-invalid-payload' == 'accepted-as-input'
+E         
+E         - accepted-as-input
+E         + rejected-invalid-payload
+
+tests\test_hermes_plugin.py:138: AssertionError
+________ test_plugin_requires_candidate_evidence_approval_and_package _________
+
+tmp_path = WindowsPath('C:/devkitPro/msys2/tmp/pytest-of-gimhc/pytest-78/test_plugin_requires_candidate0')
+
+    def test_plugin_requires_candidate_evidence_approval_and_package(tmp_path: Path) -> None:
+        service = WorkflowPluginService(tmp_path / "data")
+        state = service.start(
+            {
+                "goal": "작은 라이브러리를 구현한다",
+                "decision_action": "출시 여부를 결정한다",
+                "outcome": "명세에 맞는 라이브러리",
+                "population": "라이브러리 사용자",
+                "analysis_unit": "함수 호출",
+                "time_horizon": "출시 시점",
+                "constraints": ["네트워크 사용 금지"],
+                "question_type": "implementation",
+                "data_description": "저장소와 인수 기준",
+                "decision_threshold": "모든 수락 시험 통과",
+                "risk_level": 1,
+            }
+        )
+>       state = _reach_stage(service, state, "implementation")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_plugin_release_flow.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+service = <agent_harness.plugin_service.WorkflowPluginService object at 0x000001FC8BF468D0>
+state = {'active_candidate_id': None, 'candidate_approved': False, 'completed': False, 'current_stage': 'scope-risk', ...}
+stage = 'implementation'
+
+    def _reach_stage(
+        service: WorkflowPluginService, state: dict[str, Any], stage: str
+    ) -> dict[str, Any]:
+        current = state
+        for _ in range(20):
+            if current["current_stage"] == stage:
+                return current
+            current = _submit_all_current(service, current)
+>       raise AssertionError(f"stage not reached: {stage}")
+E       AssertionError: stage not reached: implementation
+
+tests\test_plugin_release_flow.py:58: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_agent_runner.py::test_runner_returns_data_result_without_advancing_mission
+FAILED tests/test_cli.py::test_demo_command_runs_end_to_end_and_builds_bound_release
+FAILED tests/test_cli.py::test_python_module_entrypoint_runs_demo - assert 1 ...
+FAILED tests/test_hermes_plugin.py::test_plugin_service_persists_and_advances_mission
+FAILED tests/test_plugin_release_flow.py::test_plugin_requires_candidate_evidence_approval_and_package
+5 failed, 50 passed in 1.90s
+
+[exit_code=1]

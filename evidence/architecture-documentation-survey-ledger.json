@@ -1,0 +1,323 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://c4model.com",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 2,
+      "url": "https://c4model.com/diagrams",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 3,
+      "url": "https://c4model.com/diagrams/system-context",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 4,
+      "url": "https://c4model.com/diagrams/container",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 5,
+      "url": "https://c4model.com/diagrams/dynamic",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 6,
+      "url": "https://developers.google.com/tech-writing/two/illustrations",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 7,
+      "url": "https://developers.google.com/tech-writing/two/large-docs",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 8,
+      "url": "https://cloud.google.com/architecture/framework",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 9,
+      "url": "https://aws.amazon.com/architecture",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 10,
+      "url": "https://aws.amazon.com/architecture/icons",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 11,
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/guide",
+      "title": "Azure application architecture fundamentals",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 12,
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/browse",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 13,
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 14,
+      "url": "https://docs.gitlab.com/development/architecture",
+      "title": "GitLab architecture overview",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 15,
+      "url": "https://kubernetes.io/docs/concepts/overview/components",
+      "title": "Kubernetes Components",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 16,
+      "url": "https://docs.temporal.io/temporal-service/temporal-server",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 17,
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/introduction.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 18,
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 19,
+      "url": "https://backstage.io/docs/overview/architecture-overview",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 20,
+      "url": "https://opentelemetry.io/docs/specs/otel/overview",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 21,
+      "url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/overview.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 22,
+      "url": "https://argo-workflows.readthedocs.io/en/latest/architecture",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 23,
+      "url": "https://diataxis.fr",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 24,
+      "url": "https://docs.arc42.org/home",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 25,
+      "url": "https://rustc-dev-guide.rust-lang.org/overview.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 26,
+      "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 27,
+      "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/life_of_a_request",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 28,
+      "url": "https://docs.dbos.dev",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 29,
+      "url": "https://docs.temporal.io/workflows",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 30,
+      "url": "https://docs.dbos.dev/python/tutorials/workflow-tutorial",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 31,
+      "url": "https://docs.dapr.io/developing-applications/building-blocks/workflow/workflow-overview",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 32,
+      "url": "https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 33,
+      "url": "https://doi.org/10.1147/sj.153.0182",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 34,
+      "url": "https://doi.org/10.1109/2.59",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 35,
+      "url": "https://doi.org/10.1109/PROC.1975.9939",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 36,
+      "url": "https://agilemanifesto.org",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 37,
+      "url": "https://www.microsoft.com/en-us/securityengineering/sdl",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 38,
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 39,
+      "url": "https://in-toto.io",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 40,
+      "url": "https://slsa.dev/spec/v1.2/about",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 41,
+      "url": "https://martinfowler.com/articles/continuousIntegration.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 42,
+      "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 43,
+      "url": "https://agilealliance.org/glossary/tdd",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 44,
+      "url": "https://prometheus.io/docs/introduction/overview",
+      "title": "Overview | Prometheus",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 45,
+      "url": "https://docs.temporal.io/temporal",
+      "title": "What is Temporal?",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 46,
+      "url": "https://docs.dbos.dev/why-dbos",
+      "title": "Why DBOS?",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 47,
+      "url": "https://docs.dbos.dev/architecture",
+      "title": "DBOS Architecture",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 48,
+      "url": "https://docs.dapr.io/developing-applications/building-blocks/workflow/workflow-features-concepts",
+      "title": "Dapr Workflow features and concepts",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 49,
+      "url": "https://argo-workflows.readthedocs.io/en/latest/workflow-concepts",
+      "title": "Argo Workflows Core Concepts",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 50,
+      "url": "https://argo-workflows.readthedocs.io/en/latest/retries",
+      "title": "Argo Workflows retries",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 51,
+      "url": "https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet",
+      "title": "How we built Pingora, the proxy that connects Cloudflare to the Internet",
+      "accessed": "2026-08-15"
+    },
+    {
+      "id": 52,
+      "url": "https://github.blog/engineering/infrastructure/partitioning-githubs-relational-databases-scale",
+      "title": "Partitioning GitHub’s relational databases to handle scale",
+      "accessed": "2026-08-15"
+    },
+    {
+      "id": 53,
+      "url": "https://slack.engineering/slacks-migration-to-a-cellular-architecture",
+      "title": "Slack’s Migration to a Cellular Architecture",
+      "accessed": "2026-08-15"
+    }
+  ]
+}

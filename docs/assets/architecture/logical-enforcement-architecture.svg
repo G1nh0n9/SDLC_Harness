@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Logical enforcement architecture</title>
+  <desc id="desc">Mission input reaches the Policy and State Engine. The Mission Service, Goal and Quality Planner, Workspace Broker, Task Runner, Candidate Manager, Handoff Verifier, and Quality and Release Decision exchange work and evidence while appending durable records.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#34445a"/></marker>
+    <marker id="blue-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1f5fbf"/></marker>
+    <style>
+      text { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #172033; }
+      .box { fill: #fff; stroke: #7e8a9b; stroke-width: 1.5; }
+      .policy { fill: #eaf2ff; stroke: #1f5fbf; stroke-width: 1.6; }
+      .records { fill: #f5f7fa; stroke: #aeb9c8; stroke-width: 1.4; }
+      .title { font-size: 17px; font-weight: 650; }
+      .label { font-size: 13px; fill: #536176; }
+      .small { font-size: 12px; fill: #536176; }
+      .flow { fill: none; stroke: #34445a; stroke-width: 2; marker-end: url(#arrow); }
+      .control { fill: none; stroke: #1f5fbf; stroke-width: 1.8; marker-end: url(#blue-arrow); }
+    </style>
+  </defs>
+  <rect class="box" x="24" y="36" width="170" height="72" rx="5"/>
+  <text class="title" x="109" y="67" text-anchor="middle">Hermes / user</text>
+  <text class="label" x="109" y="91" text-anchor="middle">mission input</text>
+
+  <rect class="policy" x="330" y="24" width="500" height="98" rx="5"/>
+  <text class="title" x="580" y="58" text-anchor="middle">Policy and State Engine</text>
+  <text class="label" x="580" y="84" text-anchor="middle">authority · identity · transitions · retry · invalidation</text>
+  <text class="small" x="580" y="106" text-anchor="middle">only writer of authoritative workflow state</text>
+  <path class="flow" d="M194 72 H322"/>
+
+  <text class="small" x="185" y="172" text-anchor="middle" font-weight="650">CONTROL</text>
+  <text class="small" x="550" y="172" text-anchor="middle" font-weight="650">EXECUTION</text>
+  <text class="small" x="915" y="172" text-anchor="middle" font-weight="650">ASSURANCE</text>
+
+  <rect class="box" x="42" y="194" width="286" height="88" rx="5"/>
+  <text class="title" x="185" y="226" text-anchor="middle">Mission Service</text>
+  <text class="label" x="185" y="253" text-anchor="middle">revision · steering · asynchronous routing</text>
+
+  <rect class="box" x="42" y="318" width="286" height="88" rx="5"/>
+  <text class="title" x="185" y="350" text-anchor="middle">Goal and Quality Planner</text>
+  <text class="label" x="185" y="377" text-anchor="middle">request completeness · perspectives · phase evidence</text>
+
+  <rect class="box" x="407" y="194" width="286" height="88" rx="5"/>
+  <text class="title" x="550" y="226" text-anchor="middle">Workspace Broker</text>
+  <text class="label" x="550" y="253" text-anchor="middle">roots · paths · executable restrictions</text>
+
+  <rect class="box" x="407" y="318" width="286" height="88" rx="5"/>
+  <text class="title" x="550" y="350" text-anchor="middle">Task Runner</text>
+  <text class="label" x="550" y="377" text-anchor="middle">execution · side effects · attempts · checkpoints</text>
+
+  <rect class="box" x="772" y="194" width="286" height="88" rx="5"/>
+  <text class="title" x="915" y="220" text-anchor="middle">Candidate Manager</text>
+  <text class="title" x="915" y="242" text-anchor="middle">Handoff Verifier</text>
+  <text class="small" x="915" y="265" text-anchor="middle">freeze · lineage · receiver acceptance</text>
+
+  <rect class="box" x="772" y="318" width="286" height="88" rx="5"/>
+  <text class="title" x="915" y="344" text-anchor="middle">Quality and Release</text>
+  <text class="title" x="915" y="366" text-anchor="middle">Decision</text>
+  <text class="small" x="915" y="389" text-anchor="middle">criteria · findings · uncertainty · scope</text>
+
+  <path class="control" d="M470 122 V156 H185 V186"/>
+  <path class="control" d="M580 122 V186"/>
+  <path class="control" d="M690 122 V156 H915 V186"/>
+  <path class="flow" d="M185 282 V310"/><path class="flow" d="M550 282 V310"/><path class="flow" d="M915 282 V310"/>
+  <path class="flow" d="M328 362 H399"/><path class="flow" d="M693 362 H764"/>
+
+  <rect class="records" x="42" y="488" width="1016" height="74" rx="5"/>
+  <text class="title" x="550" y="520" text-anchor="middle">Durable records</text>
+  <text class="label" x="550" y="548" text-anchor="middle">mission and state events · quality plan · candidate manifest · execution · evidence · invalidation</text>
+  <path class="flow" d="M185 406 V480"/><path class="flow" d="M550 406 V480"/><path class="flow" d="M915 406 V480"/>
+</svg>

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/agent-harness/expert-handoff.schema.json",
+  "title": "Expert Knowledge Handoff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "document_type",
+    "mission_id",
+    "revision",
+    "task_id",
+    "stage",
+    "candidate_id",
+    "sender",
+    "receiver",
+    "shared_foundation",
+    "artifacts",
+    "work_performed",
+    "decisions",
+    "assumptions",
+    "unresolved",
+    "next_actions",
+    "receiver_acceptance"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "document_type": {"const": "expert-handoff"},
+    "mission_id": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 1},
+    "task_id": {"type": "string", "minLength": 1},
+    "stage": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": ["string", "null"]},
+    "sender": {"$ref": "#/$defs/expert"},
+    "receiver": {"$ref": "#/$defs/expert"},
+    "shared_foundation": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/artifact"}
+    },
+    "work_performed": {"$ref": "#/$defs/nonEmptyStrings"},
+    "decisions": {"$ref": "#/$defs/nonEmptyStrings"},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "unresolved": {"type": "array", "items": {"type": "string"}},
+    "next_actions": {"$ref": "#/$defs/nonEmptyStrings"},
+    "receiver_acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["receiver_expert_id", "usable_without_rework", "reasons"],
+      "properties": {
+        "receiver_expert_id": {"type": "string", "minLength": 1},
+        "usable_without_rework": {"type": "boolean"},
+        "reasons": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  },
+  "$defs": {
+    "expert": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expert_id", "role", "responsibility_area"],
+      "properties": {
+        "expert_id": {"type": "string", "minLength": 1},
+        "role": {"type": "string", "minLength": 1},
+        "responsibility_area": {"type": ["string", "null"]}
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "media_type"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+        "media_type": {"type": "string", "minLength": 1}
+      }
+    },
+    "nonEmptyStrings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}

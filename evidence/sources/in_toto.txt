@@ -1,0 +1,37 @@
+in-toto
+About
+Docs
+Ecosystem
+Community
+Blog
+News
+
+A framework to secure the integrity of software supply chains
+
+Learn More Get started Try the demo
+
+in-toto is designed to ensure the integrity of a software product from initiation to end-user installation. It does so by making it transparent to the user what steps were performed, by whom and in what order.
+
+Open, extensible standard
+
+An open metadata standard that you can implement in your software’s supply chain.
+
+Read more
+
+Adoptions and Integrations
+
+Explore integrations and adopters of in-toto.
+
+Read more
+
+Extensive tooling
+
+Use in-toto today through Apache-licensed libraries and tools.
+
+Read more
+
+in-toto is a CNCF graduated project.
+
+
+© 2020–2026 in-toto Authors
+CC BY 4.0 | Trademarks | Funding |Privacy Policy

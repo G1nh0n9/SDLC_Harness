@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://docs.temporal.io/temporal",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 2,
+      "url": "https://docs.temporal.io/encyclopedia/retry-policies",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 3,
+      "url": "https://docs.temporal.io/develop/python/best-practices/error-handling",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 4,
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 5,
+      "url": "https://docs.langchain.com/oss/python/langgraph/fault-tolerance",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 6,
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 7,
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 8,
+      "url": "https://openai.github.io/openai-agents-python/guardrails",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 9,
+      "url": "https://openai.github.io/openai-agents-python/running_agents",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 10,
+      "url": "https://openai.github.io/openai-agents-python/tracing",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 11,
+      "url": "https://openai.github.io/openai-agents-python/human_in_the_loop",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 12,
+      "url": "https://arxiv.org/abs/2305.17926v2",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 13,
+      "url": "https://arxiv.org/abs/2306.05685v4",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 14,
+      "url": "https://arxiv.org/abs/2305.20050v1",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 15,
+      "url": "https://arxiv.org/abs/2407.00215v1",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 16,
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 17,
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 18,
+      "url": "https://docs.aws.amazon.com/step-functions/latest/dg/redrive-executions.html",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 19,
+      "url": "https://docs.temporal.io/workflow-execution/workflowid-runid",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 20,
+      "url": "https://temporal.io/blog/idempotency-and-durable-execution",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 21,
+      "url": "https://temporal.io/blog/compensating-actions-part-of-a-complete-breakfast-with-sagas",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 22,
+      "url": "https://adk.dev/runtime/resume",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 23,
+      "url": "https://docs.crewai.com/v1.15.16/en/concepts/checkpointing",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 24,
+      "url": "https://learn.microsoft.com/en-us/agent-framework/workflows/checkpoints",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 25,
+      "url": "https://arxiv.org/abs/2406.12319",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 26,
+      "url": "https://arxiv.org/abs/2404.18796",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 27,
+      "url": "https://arxiv.org/abs/2407.18370",
+      "title": "",
+      "accessed": "2026-08-14"
+    },
+    {
+      "id": 28,
+      "url": "https://arxiv.org/abs/2410.12784",
+      "title": "",
+      "accessed": "2026-08-14"
+    }
+  ]
+}

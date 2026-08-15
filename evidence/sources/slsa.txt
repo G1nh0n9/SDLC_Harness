@@ -1,0 +1,64 @@
+Home
+Current activities
+SLSA v1.2
+Understanding SLSA
+What's new
+About SLSA
+Supply chain threats
+Use cases
+Guiding principles
+FAQ
+Future directions
+Tracks
+Build Track
+Basics
+Terminology
+Producing artifacts
+Distributing provenance
+Verifying artifacts
+Assessing build platforms
+Source Track
+Producing source
+Verifying source
+Assessing source control systems
+Example controls
+Cross Track Information
+Threats & mitigations
+Verified Properties
+Attestation formats
+General model
+Provenance
+Build Provenance
+Verification Summary
+Single-page view
+SLSA v1.1
+SLSA Working Draft
+How to SLSA
+Specification stages
+Community
+Blog
+Provenance
+Status: Approved
+
+ON THIS PAGE
+
+In SLSA ‘provenance’ refers to verifiable information that can be used to track an artifact back, through all the moving parts in a complex supply chain, to where it came from. It’s the verifiable information about software artifacts describing where, when, and how something was produced.
+
+The different SLSA tracks may have their own, more specific, implementations of provenance to account for their unique needs.
+
+NOTE: If you landed here via the in-toto attestation predicate type https://slsa.dev/provenance/v1 please see Build provenance.
+
+Build provenance - tracks the output of a build process back to the source code used to produce that output.
+Source provenance - tracks the creation of source code revisions and the change management processes that were in place during their creation.
+‹ General model
+Build Provenance ›
+
+SLSA is a cross-industry collaboration.
+© 2026 The Linux Foundation, under the terms of the Community Specification License 1.0
+
+Privacy statement
+We use GoatCounter to help us improve our website by collecting and reporting information on how it's used. We do not store advertising or tracking cookies. The information we collect does not identify anyone and does not track an individual's use of the site.
+
+View source on GitHub
+
+This site is powered by Netlify

@@ -1,0 +1,48 @@
+Skip to content
+Join us in Orlando, FL 10/11 – 10/15 @ InfoSec World 2026
+GETTING STARTED
+RESOURCES
+PROJECT INITIATIVES
+BLOG
+ABOUT
+GEN AI SECURITY
+RESOURCES
+WHITEPAPERS/GUIDES
+Agentic AI – Threats and Mitigations
+February 17, 2025
+About
+
+Agentic AI represents an advancement in autonomous systems, increasingly enabled by large language models (LLMs) and generative AI. While agentic AI predates modern LLMs, their integration with generative AI has significantly expanded their scale, capabilities, and associated risks. This document is the first in a series of guides from the OWASP Agentic Security Initiative (ASI) to provide a threat-model-based reference of emerging agentic threats and discuss mitigations.
+
+Download
+Additional Resources
+August 3, 2026
+Resources
+OWASP GenAI LLM Top 10 2026
+June 28, 2026
+Resources
+Solutions Landscape – Red Teaming Taxonomy
+June 1, 2026
+Resources
+State of Agentic AI Security and Governance 2.01
+PRIVACY
+NEWSLETTER
+CONTACT
+OVERVIEW
+LLM TOP 10
+INITIATIVES
+LANDSCAPE
+GLOSSARY
+ROADMAPS
+RESOURCES
+SPONSORS
+SPONSORSHIP
+CONTRIBUTE
+NEWSROOM
+EVENTS
+MEETINGS
+LEADERSHIP
+VOLUNTEER JOBS
+OWASP and the OWASP logo are trademarks of the OWASP Foundation, Inc. Unless otherwise specified, all content on the site is Creative Commons Attribution-ShareAlike v4.0 and provided without
+
+warranty of service or accuracy. For more information, please refer to our General Disclaimer.  – Copyright © 2025 OWASP Foundation, Inc.

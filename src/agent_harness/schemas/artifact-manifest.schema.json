@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Artifact Manifest",
+  "allOf": [
+    {"$ref": "handoff.schema.json"},
+    {"properties": {"document_type": {"const": "artifact-manifest"}}}
+  ]
+}

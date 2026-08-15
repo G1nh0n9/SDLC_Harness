@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-08-15 01:13:40 KST",
+  "scope": [
+    "pyproject.toml",
+    "src/**/*.py",
+    "tests/**/*.py",
+    "schemas/**/*.json"
+  ],
+  "file_count": 30,
+  "snapshot_sha256": "9e836e83202e55fc4b5e90a7678f1e86517792c63986e1209b86362e85afeead",
+  "files": [
+    {
+      "path": "pyproject.toml",
+      "size": 1133,
+      "sha256": "a72e3852cdaf8affaed97ba27c3ad242dbebe81528bde5629eb1718781171353"
+    },
+    {
+      "path": "src/agent_harness/__init__.py",
+      "size": 197,
+      "sha256": "84edc047c5c81795e6223063fcf29660d297247c711212d0cf3fea331be98775"
+    },
+    {
+      "path": "src/agent_harness/agent_runner.py",
+      "size": 6808,
+      "sha256": "6cbc5ab2389503320d1ede154ff0288eb13f22923c795bf5cb3626d7a44f357a"
+    },
+    {
+      "path": "src/agent_harness/candidate.py",
+      "size": 11648,
+      "sha256": "eda6951b740e88edc14603c7b44c101c36f468b3ae3eb2234c6c10dc98c05452"
+    },
+    {
+      "path": "src/agent_harness/cli.py",
+      "size": 12345,
+      "sha256": "280507b50043ebcf8b73ab3138c6b4e1f90ab237e665594e969a7b93a2d3b9e5"
+    },
+    {
+      "path": "src/agent_harness/evidence.py",
+      "size": 11180,
+      "sha256": "dff02d2a3a2ddf4d7d630dbdce29476c3e97ec02647680defec5517341d38d58"
+    },
+    {
+      "path": "src/agent_harness/handoff.py",
+      "size": 3158,
+      "sha256": "083e40fa67f9d3bcf51bcecbc19502dadbe29cae52694efd59a892715f83fd3d"
+    },
+    {
+      "path": "src/agent_harness/hermes_plugin.py",
+      "size": 4363,
+      "sha256": "3e1323e8a7870687ea9d88e29693832cac7af2bfcec21dfe2017a0f916e4961c"
+    },
+    {
+      "path": "src/agent_harness/methodology.py",
+      "size": 14551,
+      "sha256": "fd97c9ee2a9eba3db67ca132b6afcfe54ce54e8c6964999108c500f687783927"
+    },
+    {
+      "path": "src/agent_harness/mission.py",
+      "size": 19555,
+      "sha256": "da58a7338de0f143bb325d0b152883d576429871b4783a92fd5e8edc7ee5425f"
+    },
+    {
+      "path": "src/agent_harness/plugin_schemas.py",
+      "size": 9995,
+      "sha256": "7de95eecd68eb42bd682952a91c50a47711cbd637473adb79cad70aee3d7ed55"
+    },
+    {
+      "path": "src/agent_harness/plugin_service.py",
+      "size": 30705,
+      "sha256": "594a2ea47b090b15b56013805597240ca78218c9517319a700ff7b3db5070ba7"
+    },
+    {
+      "path": "src/agent_harness/policy.py",
+      "size": 4194,
+      "sha256": "9b0f42f2372e3c741526d4a2f8755e7e167694f6fdda48121688d9db4faddc95"
+    },
+    {
+      "path": "src/agent_harness/release.py",
+      "size": 4699,
+      "sha256": "50b7af1c016b0cdd50c281d85c599c716d22c3e7e23bc3106094f7db35d25ebf"
+    },
+    {
+      "path": "src/agent_harness/schemas/__init__.py",
+      "size": 52,
+      "sha256": "2cd0c9c6d7bd97d68b3d36ce1ef1f7da7387ae58aec4cdba6a1a87ccb0a6283d"
+    },
+    {
+      "path": "src/agent_harness/state_machine.py",
+      "size": 1428,
+      "sha256": "5e95096ae557936d0dc2e916946780e2b44f66bab92f4badd90d1ea8839fb35e"
+    },
+    {
+      "path": "src/agent_harness/workspace.py",
+      "size": 8043,
+      "sha256": "17cdf3f9234172ad2a4ffa8265a65cf7e03889675479bc4b1305abdf27fcb01a"
+    },
+    {
+      "path": "tests/test_agent_runner.py",
+      "size": 5775,
+      "sha256": "d2c33fe9f6641647ff2d2b657c6f4468b6b56f7ee7ddfadfe7b3374cdca98bcb"
+    },
+    {
+      "path": "tests/test_candidate.py",
+      "size": 4604,
+      "sha256": "b4654432c8508931bcf0af0b6ea3e1fe61cc2495acf07cc8cc4823e87f49e2a4"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "size": 1789,
+      "sha256": "8f22b4108a72472558a77e3e71185da0090375f6c53901fdc633d7d56dc882d3"
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "size": 2800,
+      "sha256": "da2c84390aa12ceef1bab8831ec843e4c2b04831758126cf83148ad9217ab901"
+    },
+    {
+      "path": "tests/test_handoff.py",
+      "size": 3905,
+      "sha256": "7824cf7b78523c11058a16be57fab3d3c698dbec4adba36c8e615f42f31d7f2b"
+    },
+    {
+      "path": "tests/test_hermes_plugin.py",
+      "size": 4503,
+      "sha256": "1c8883aa5e4f3c42ed31b706c383654cbeb7a6c89030b17a4e7242ed96852524"
+    },
+    {
+      "path": "tests/test_methodology.py",
+      "size": 7822,
+      "sha256": "21eb37447ae534aff030f1ebe23059b5fb2826ec9918d736c6d74a16acf5ade1"
+    },
+    {
+      "path": "tests/test_mission.py",
+      "size": 5636,
+      "sha256": "b5d85b9699fcb22c039ab2b586f683239388a34b3360d875ca4699b5185f4b9d"
+    },
+    {
+      "path": "tests/test_plugin_release_flow.py",
+      "size": 10115,
+      "sha256": "c2c20c020b13d8eeeae252319457d9d2bf62c890328e315ca40f92e9aaeb68ee"
+    },
+    {
+      "path": "tests/test_policy.py",
+      "size": 9299,
+      "sha256": "f94edb183ff25e00af6e411318680d722c4ad7ce8ebb488fd4dbdbfd4df0d70b"
+    },
+    {
+      "path": "tests/test_release.py",
+      "size": 4557,
+      "sha256": "e641d55b5849d17e3f6b06746e6cab13ad2a66cd3cb659fd7f8a4fc1ab1cb16b"
+    },
+    {
+      "path": "tests/test_state_machine.py",
+      "size": 2134,
+      "sha256": "87f49ea6289e8d42e486f960df58067212e2f43c1182dc8171a6c1a1b8d2731e"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "size": 1898,
+      "sha256": "68e06778fa0b0841187f711f01538cf95bc130cdbf717ebc425963b374efbf39"
+    }
+  ]
+}

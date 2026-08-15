@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" role="img" aria-labelledby="title desc">
+  <title id="title">Responsibility and decision flow</title>
+  <desc id="desc">Three areas of responsibility jointly define the quality baseline. Requirements and Outcomes defines the mission baseline, Engineering and Software Delivery produces a frozen candidate, and Verification and Quality Assurance evaluates the evidence and records the final quality judgment. The Policy and State Engine validates the evidence and records each authoritative state transition.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#34445a"/></marker>
+    <marker id="blue-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#1f5fbf"/></marker>
+    <style>
+      text { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #172033; }
+      .box { fill: #fff; stroke: #7e8a9b; stroke-width: 1.5; }
+      .policy { fill: #eaf2ff; stroke: #1f5fbf; stroke-width: 1.6; }
+      .title { font-size: 18px; font-weight: 650; }
+      .label { font-size: 14px; fill: #536176; }
+      .small { font-size: 12px; fill: #536176; }
+      .flow { fill: none; stroke: #34445a; stroke-width: 2; marker-end: url(#arrow); }
+      .control { fill: none; stroke: #1f5fbf; stroke-width: 1.8; marker-end: url(#blue-arrow); }
+    </style>
+  </defs>
+  <rect class="policy" x="220" y="22" width="560" height="82" rx="5"/>
+  <text class="title" x="500" y="55" text-anchor="middle">Joint mission and quality baseline</text>
+  <text class="label" x="500" y="82" text-anchor="middle">outcome · prohibited behavior · must-pass criteria · verification methods</text>
+
+  <path class="flow" d="M332 104 V145"/><path class="flow" d="M500 104 V145"/><path class="flow" d="M668 104 V145"/>
+
+  <rect class="box" x="24" y="150" width="276" height="112" rx="5"/>
+  <text class="title" x="162" y="185" text-anchor="middle">Requirements and Outcomes</text>
+  <text class="label" x="162" y="215" text-anchor="middle">mission baseline</text>
+  <text class="small" x="162" y="240" text-anchor="middle">intent · scope · acceptance meaning</text>
+
+  <rect class="box" x="362" y="150" width="276" height="112" rx="5"/>
+  <text class="title" x="500" y="177" text-anchor="middle">Engineering and</text>
+  <text class="title" x="500" y="198" text-anchor="middle">Software Delivery</text>
+  <text class="label" x="500" y="224" text-anchor="middle">frozen candidate</text>
+  <text class="small" x="500" y="247" text-anchor="middle">source · build inputs · execution</text>
+
+  <rect class="box" x="700" y="150" width="276" height="112" rx="5"/>
+  <text class="title" x="838" y="177" text-anchor="middle">Verification and</text>
+  <text class="title" x="838" y="198" text-anchor="middle">Quality Assurance</text>
+  <text class="label" x="838" y="224" text-anchor="middle">quality decision</text>
+  <text class="small" x="838" y="247" text-anchor="middle">observations · findings · release scope</text>
+
+  <path class="flow" d="M300 206 H354"/><text class="small" x="327" y="194" text-anchor="middle">baseline</text>
+  <path class="flow" d="M638 206 H692"/><text class="small" x="665" y="194" text-anchor="middle">candidate</text>
+
+  <rect class="policy" x="220" y="340" width="560" height="76" rx="5"/>
+  <text class="title" x="500" y="370" text-anchor="middle">Policy and State Engine</text>
+  <text class="label" x="500" y="395" text-anchor="middle">derive identity · check evidence · append decision · advance or reject</text>
+  <path class="control" d="M162 262 V306 H410 V332"/>
+  <path class="control" d="M500 262 V332"/>
+  <path class="control" d="M838 262 V306 H590 V332"/>
+</svg>

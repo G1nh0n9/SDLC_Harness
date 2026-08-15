@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sources": [
+    {"id": 16, "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-87398", "title": "NASA-STD-8739.8B Software Assurance and Software Safety Standard", "accessed": "2026-08-15"},
+    {"id": 23, "url": "https://diataxis.fr", "title": "Diátaxis", "accessed": "2026-08-14"},
+    {"id": 24, "url": "https://docs.arc42.org/home", "title": "arc42 Documentation", "accessed": "2026-08-14"},
+    {"id": 29, "url": "https://docs.temporal.io/workflows", "title": "Temporal Workflow", "accessed": "2026-08-14"},
+    {"id": 30, "url": "https://docs.dbos.dev/python/tutorials/workflow-tutorial", "title": "DBOS Workflows", "accessed": "2026-08-14"},
+    {"id": 31, "url": "https://docs.dapr.io/developing-applications/building-blocks/workflow/workflow-overview", "title": "Dapr Workflow Overview", "accessed": "2026-08-14"},
+    {"id": 32, "url": "https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf", "title": "NASA Systems Engineering Handbook", "accessed": "2026-08-14"},
+    {"id": 33, "url": "https://doi.org/10.1147/sj.153.0182", "title": "Design and Code Inspections to Reduce Errors in Program Development", "accessed": "2026-08-14"},
+    {"id": 34, "url": "https://doi.org/10.1109/2.59", "title": "A Spiral Model of Software Development and Enhancement", "accessed": "2026-08-14"},
+    {"id": 35, "url": "https://doi.org/10.1109/PROC.1975.9939", "title": "The Protection of Information in Computer Systems", "accessed": "2026-08-14"},
+    {"id": 36, "url": "https://agilemanifesto.org", "title": "Manifesto for Agile Software Development", "accessed": "2026-08-14"},
+    {"id": 37, "url": "https://www.microsoft.com/en-us/securityengineering/sdl", "title": "Microsoft Security Development Lifecycle", "accessed": "2026-08-14"},
+    {"id": 38, "url": "https://csrc.nist.gov/pubs/sp/800/218/final", "title": "NIST SP 800-218 Secure Software Development Framework", "accessed": "2026-08-14"},
+    {"id": 39, "url": "https://github.com/in-toto/specification/blob/v1.0/in-toto-spec.md", "title": "in-toto Specification v1.0", "accessed": "2026-08-15"},
+    {"id": 40, "url": "https://slsa.dev/spec/v1.2/about", "title": "About SLSA", "accessed": "2026-08-14"},
+    {"id": 41, "url": "https://martinfowler.com/articles/continuousIntegration.html", "title": "Continuous Integration", "accessed": "2026-08-14"},
+    {"id": 42, "url": "https://martinfowler.com/eaaDev/EventSourcing.html", "title": "Event Sourcing", "accessed": "2026-08-14"},
+    {"id": 43, "url": "https://agilealliance.org/glossary/tdd", "title": "What is Test Driven Development?", "accessed": "2026-08-14"}
+  ]
+}

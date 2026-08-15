@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">Life of the export-ownership mission</title>
+  <desc id="desc">The normal path moves from an approved baseline through expert work, implementation, candidate freeze, independent verification, and a release decision. If a must-pass acceptance criterion fails, correction continues in a child candidate and the affected evidence is collected again.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#34445a"/></marker>
+    <marker id="red-arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#a33a3a"/></marker>
+    <style>
+      text { font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: #172033; }
+      .box { fill: #fff; stroke: #7e8a9b; stroke-width: 1.5; }
+      .decision { fill: #eaf2ff; stroke: #1f5fbf; stroke-width: 1.6; }
+      .child { fill: #fff1f1; stroke: #a33a3a; stroke-width: 1.6; }
+      .title { font-size: 17px; font-weight: 650; }
+      .label { font-size: 13px; fill: #536176; }
+      .small { font-size: 12px; fill: #536176; }
+      .flow { fill: none; stroke: #34445a; stroke-width: 2; marker-end: url(#arrow); }
+      .return { fill: none; stroke: #a33a3a; stroke-width: 2; marker-end: url(#red-arrow); }
+      .red { fill: #a33a3a; }
+    </style>
+  </defs>
+  <text class="label" x="28" y="36" font-weight="650">NORMAL PATH</text>
+
+  <rect class="box" x="28" y="68" width="196" height="126" rx="5"/>
+  <text class="title" x="126" y="102" text-anchor="middle">1. Baseline</text>
+  <text class="label" x="126" y="132" text-anchor="middle">outcome and scope</text>
+  <text class="label" x="126" y="156" text-anchor="middle">must-pass criteria</text>
+  <text class="label" x="126" y="180" text-anchor="middle">verification methods</text>
+
+  <rect class="box" x="266" y="68" width="196" height="126" rx="5"/>
+  <text class="title" x="364" y="98" text-anchor="middle">2. Expert assignments</text>
+  <text class="small" x="364" y="118" text-anchor="middle">P0–P3 base involvement</text>
+  <text class="small" x="364" y="139" text-anchor="middle">P4 independent assessment</text>
+  <text class="small" x="364" y="160" text-anchor="middle">P5 bounded investigation</text>
+  <text class="small" x="364" y="181" text-anchor="middle">three knowledge layers</text>
+
+  <rect class="box" x="504" y="68" width="196" height="126" rx="5"/>
+  <text class="title" x="602" y="102" text-anchor="middle">3. Build and freeze</text>
+  <text class="label" x="602" y="132" text-anchor="middle">one-use authority grant</text>
+  <text class="label" x="602" y="156" text-anchor="middle">captured execution</text>
+  <text class="label" x="602" y="180" text-anchor="middle">candidate and SHA-256</text>
+
+  <rect class="box" x="742" y="68" width="196" height="126" rx="5"/>
+  <text class="title" x="840" y="102" text-anchor="middle">4. Verify</text>
+  <text class="label" x="840" y="132" text-anchor="middle">automatic checks</text>
+  <text class="label" x="840" y="156" text-anchor="middle">receiver acceptance</text>
+  <text class="label" x="840" y="180" text-anchor="middle">independent findings</text>
+
+  <rect class="decision" x="980" y="68" width="192" height="126" rx="5"/>
+  <text class="title" x="1076" y="102" text-anchor="middle">5. Decide</text>
+  <text class="label" x="1076" y="132" text-anchor="middle">release</text>
+  <text class="label" x="1076" y="156" text-anchor="middle">limited release</text>
+  <text class="label" x="1076" y="180" text-anchor="middle">hold / insufficient evidence</text>
+
+  <path class="flow" d="M224 131 H258"/><path class="flow" d="M462 131 H496"/><path class="flow" d="M700 131 H734"/><path class="flow" d="M938 131 H972"/>
+
+  <rect class="child" x="504" y="300" width="196" height="92" rx="5"/>
+  <text class="title red" x="602" y="334" text-anchor="middle">Child candidate</text>
+  <text class="label red" x="602" y="360" text-anchor="middle">keep reviewed candidate unchanged</text>
+  <text class="label red" x="602" y="382" text-anchor="middle">collect fresh affected evidence</text>
+
+  <path class="return" d="M840 194 V250 H602 V292"/>
+  <text class="small red" x="738" y="240" text-anchor="middle">must-pass criterion fails</text>
+  <path class="return" d="M504 346 H426 V224 H602 V202"/>
+  <text class="small red" x="416" y="336" text-anchor="end">fresh affected evidence</text>
+
+  <rect x="28" y="430" width="1144" height="28" fill="#f5f7fa" stroke="#d7dee8"/>
+  <text class="small" x="600" y="449" text-anchor="middle">Before each transition, policy checks the active revision, authority grant, workflow-phase records, candidate identity, and blocking findings.</text>
+</svg>

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "title": "GitHub Docs: About protected branches",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "Optionally, you can choose to dismiss stale pull request approvals when commits are pushed that affect the diff in the pull request.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+      "title": "GitHub Docs: Managing a merge queue",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "The merge queue will ensure the pull request's changes pass all required status checks when applied to the latest version of the target branch and any pull requests already in the queue.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://slsa.dev/spec/v1.2/provenance",
+      "title": "SLSA v1.2: Provenance",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "Build provenance - tracks the output of a build process back to the source code used to produce that output.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://git-scm.com/docs/git-worktree",
+      "title": "Git: git-worktree Documentation",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "A git repository can support multiple working trees, allowing you to check out more than one branch at a time.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://github.com/in-toto/docs/blob/master/in-toto-spec.md",
+      "title": "in-toto Specification",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "Task and privilege separation: the different steps within the supply chain can be assigned to different functionaries.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": "https://www.anthropic.com/research/building-effective-agents",
+      "title": "Anthropic: Building Effective AI Agents",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "In the evaluator-optimizer workflow, one LLM call generates a response while another provides evaluation and feedback in a loop.",
+          "added": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency",
+      "title": "OWASP LLM06:2025 Excessive Agency",
+      "accessed": "2026-08-14",
+      "quotes": [
+        {
+          "text": "Implement authorization in downstream systems rather than relying on an LLM to decide if an action is allowed or not.",
+          "added": "2026-08-14"
+        }
+      ]
+    }
+  ]
+}
